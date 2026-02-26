@@ -19,8 +19,8 @@ export default function FounderSection() {
                         <div className="absolute inset-0 bg-[#e8e6e1] -rotate-3 scale-105 rounded-sm transform origin-bottom-left" />
                         <div className="relative h-full w-full overflow-hidden rounded-sm">
                             <Image
-                                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop"
-                                alt="Founder Portrait"
+                                src="/michelle.png"
+                                alt="Michelle - Founder & CEO"
                                 fill
                                 className="object-cover"
                             />
@@ -54,15 +54,15 @@ export default function FounderSection() {
                         <div className="pt-8 flex items-center gap-6 border-t border-[#e8e6e1]/60">
                             <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-sm">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
-                                    alt="Founder Thumbnail"
+                                    src="/michelle.png"
+                                    alt="Michelle Thumbnail"
                                     fill
                                     className="object-cover"
                                 />
                             </div>
                             <div>
-                                <p className="font-serif text-2xl text-[#1c1c1a]">Our Founder</p>
-                                <p className="text-[#5c5c57] text-sm uppercase tracking-widest mt-1">CEO & Visionary</p>
+                                <p className="font-serif text-2xl text-[#1c1c1a]">Michelle</p>
+                                <p className="text-[#5c5c57] text-sm uppercase tracking-widest mt-1">Founder & CEO</p>
                             </div>
                         </div>
                     </motion.div>
