@@ -1,0 +1,91 @@
+[
+    {
+        "id": 1,
+        "brand_name": "Paddywax",
+        "logo": "https://images.unsplash.com/photo-1602874801007-bd458fc1d317?q=80&w=200&h=200&auto=format&fit=crop",
+        "title": "Spring Booking Special",
+        "description": "$500+ Order = Free Freight & Net 60 Terms. Applies to all new Spring Everyday collections.",
+        "regions": [
+            "All",
+            "Southeast",
+            "Mid-Atlantic",
+            "Northeast",
+            "Midwest",
+            "West"
+        ],
+        "expires": "2026-06-01"
+    },
+    {
+        "id": 2,
+        "brand_name": "True Brands",
+        "logo": "https://images.unsplash.com/photo-1574588725835-10eb0a68d0e5?q=80&w=200&h=200&auto=format&fit=crop",
+        "title": "New Customer Promo",
+        "description": "10% Off Opening Order ($300 min). Excludes clearance items.",
+        "regions": [
+            "All",
+            "Southeast",
+            "Mid-Atlantic",
+            "Northeast",
+            "Midwest",
+            "West"
+        ],
+        "expires": "2026-12-31"
+    },
+    {
+        "id": 3,
+        "brand_name": "Santa Barbara Design Studio",
+        "logo": "https://images.unsplash.com/photo-1544457070-4cd773b4d71e?q=80&w=200&h=200&auto=format&fit=crop",
+        "title": "Summer Market Show Special",
+        "description": "Free Offset display fixture with $1,000 purchase of Everyday Assortments.",
+        "regions": [
+            "West",
+            "Midwest",
+            "Southeast"
+        ],
+        "expires": "2026-08-15"
+    },
+    {
+        "id": 4,
+        "brand_name": "Fred & Friends",
+        "logo": "https://images.unsplash.com/photo-1558024920-b41e1887dc32?q=80&w=200&h=200&auto=format&fit=crop",
+        "title": "Holiday Pre-Book",
+        "description": "Order by July 1st for guaranteed Nov 1st delivery and Free Freight on $750+.",
+        "regions": [
+            "All",
+            "Southeast",
+            "Mid-Atlantic",
+            "Northeast",
+            "Midwest",
+            "West"
+        ],
+        "expires": "2026-07-01"
+    },
+    {
+        "id": 5,
+        "brand_name": "Peking Handicraft",
+        "logo": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?q=80&w=200&h=200&auto=format&fit=crop",
+        "title": "Regional Flash Sale",
+        "description": "5% off all woven pillows and throws. Use regional promo code at checkout.",
+        "regions": [
+            "Northeast",
+            "Mid-Atlantic"
+        ],
+        "expires": "2026-05-31"
+    },
+    {
+        "id": 6,
+        "brand_name": "Cider Mill Press",
+        "logo": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=200&h=200&auto=format&fit=crop",
+        "title": "Stock Up for Q4",
+        "description": "Buy 10 cases, get 1 case free across all cookbook titles.",
+        "regions": [
+            "All",
+            "Southeast",
+            "Mid-Atlantic",
+            "Northeast",
+            "Midwest",
+            "West"
+        ],
+        "expires": "2026-10-31"
+    }
+]
