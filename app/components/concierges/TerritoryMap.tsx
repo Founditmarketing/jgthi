@@ -33,26 +33,31 @@ export default function TerritoryMap({ activeRegion, onRegionSelect }: Territory
                     return (
                         <motion.button
                             key={region.id}
-                            onClick={() => onRegionSelect(region.id)}
-                            className="group relative w-full text-left flex items-center justify-between py-6 md:py-8 border-b border-[#e8e6e1] hover:border-[#1c1c1a] transition-colors overflow-hidden"
-                            whileHover="hover"
+                            onClick={() => {
+                                onRegionSelect(region.id);
+                                document.getElementById('directory-grid')?.scrollIntoView({ behavior: 'smooth' });
+                            }}
+                            className={`group relative w-full text-left flex items-center justify-between py-6 md:py-8 border-b transition-colors overflow-hidden ${isActive ? 'border-[#1c1c1a]' : 'border-[#e8e6e1] hover:border-[#1c1c1a]'}`}
+                            whileHover={!isActive ? "hover" : undefined}
                         >
                             {/* Animated Background Slide on Hover (Left to right) */}
                             <motion.div
                                 className="absolute inset-0 bg-[#1c1c1a] z-0"
-                                initial={{ x: '-100%' }}
-                                variants={{
-                                    hover: { x: 0, transition: { type: 'tween', ease: 'circOut', duration: 0.5 } }
-                                }}
+                                initial={false}
+                                animate={{ x: isActive ? 0 : '-100%' }}
+                                transition={{ type: 'tween', ease: 'circOut', duration: 0.5 }}
+                                variants={!isActive ? {
+                                    hover: { x: 0 }
+                                } : {}}
                             />
 
                             {/* Content */}
                             <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-2 md:gap-12 w-full transition-colors duration-500">
-                                <span className={`font-serif text-4xl md:text-6xl tracking-tight transition-colors duration-500 ${isActive ? 'text-[#1c1c1a] italic' : 'text-[#8a8a85] group-hover:text-[#f5f5f0]'}`}>
+                                <span className={`font-serif text-4xl md:text-6xl tracking-tight transition-colors duration-500 ${isActive ? 'text-[#f5f5f0] italic' : 'text-[#8a8a85] group-hover:text-[#f5f5f0]'}`}>
                                     {region.label}
                                 </span>
 
-                                <span className={`text-xs md:text-sm uppercase tracking-widest transition-colors duration-500 max-w-sm ${isActive ? 'text-[#1c1c1a]' : 'text-[#8a8a85] group-hover:text-[#e8e6e1]'}`}>
+                                <span className={`text-xs md:text-sm uppercase tracking-widest transition-colors duration-500 max-w-sm ${isActive ? 'text-[#e8e6e1]' : 'text-[#8a8a85] group-hover:text-[#e8e6e1]'}`}>
                                     {region.desc}
                                 </span>
                             </div>
@@ -60,12 +65,12 @@ export default function TerritoryMap({ activeRegion, onRegionSelect }: Territory
                             {/* Arrow */}
                             <div className="relative z-10 hidden md:flex items-center justify-center overflow-hidden">
                                 <motion.div
-                                    className="flex text-[#1c1c1a] group-hover:text-[#f5f5f0] transition-colors duration-500"
+                                    className={`flex transition-colors duration-500 ${isActive ? 'text-[#f5f5f0]' : 'text-[#1c1c1a] group-hover:text-[#f5f5f0]'}`}
                                     variants={{
                                         hover: { x: [0, 10, 0], transition: { repeat: Infinity, duration: 1.5 } }
                                     }}
                                 >
-                                    {isActive ? <div className="w-3 h-3 rounded-full bg-[#1c1c1a] mr-4 shadow-sm" /> : <ArrowRight className="w-8 h-8 opacity-0 group-hover:opacity-100 transition-opacity" />}
+                                    {isActive ? <div className="w-3 h-3 rounded-full bg-[#f5f5f0] mr-4 shadow-sm" /> : <ArrowRight className="w-8 h-8 opacity-0 group-hover:opacity-100 transition-opacity" />}
                                 </motion.div>
                             </div>
                         </motion.button>

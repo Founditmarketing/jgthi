@@ -1,0 +1,362 @@
+[
+    {
+        "id": 1,
+        "name": "Paddywax",
+        "category": "Candles",
+        "description": "Artisan candles bringing warmth and rich fragrances to every room.",
+        "image": "https://images.unsplash.com/photo-1602874801007-bd458fc1d317?q=80&w=800&auto=format&fit=crop",
+        "featured": true,
+        "established": "1996"
+    },
+    {
+        "id": 2,
+        "name": "True Brands",
+        "category": "Kitchen",
+        "description": "Innovative and elegant accessories for wine, beer, and gourmet entertaining.",
+        "image": "https://images.unsplash.com/photo-1574588725835-10eb0a68d0e5?q=80&w=800&auto=format&fit=crop",
+        "featured": true,
+        "established": "2003"
+    },
+    {
+        "id": 3,
+        "name": "Santa Barbara Design Studio",
+        "category": "Gift",
+        "description": "Eclectic, fun, and sophisticated gifts bringing a touch of coastal charm.",
+        "image": "https://images.unsplash.com/photo-1544457070-4cd773b4d71e?q=80&w=800&auto=format&fit=crop",
+        "featured": true,
+        "established": "1976"
+    },
+    {
+        "id": 4,
+        "name": "Fred & Friends",
+        "category": "Novelty",
+        "description": "Clever, quirky, and unexpectedly delightful products for everyday life.",
+        "image": "https://images.unsplash.com/photo-1558024920-b41e1887dc32?q=80&w=800&auto=format&fit=crop",
+        "featured": true,
+        "established": "2004"
+    },
+    {
+        "id": 5,
+        "name": "Peking Handicraft",
+        "category": "Home Decor",
+        "description": "Exquisite textiles, embroidered pillows, and handcrafted home accessories.",
+        "image": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?q=80&w=800&auto=format&fit=crop",
+        "featured": true,
+        "established": "1977"
+    },
+    {
+        "id": 6,
+        "name": "Cider Mill Press",
+        "category": "Stationery",
+        "description": "Beautifully bound books, journals, and literary gifts.",
+        "image": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=800&auto=format&fit=crop",
+        "featured": true,
+        "established": "2005"
+    },
+    {
+        "id": 7,
+        "name": "Compendium",
+        "category": "Stationery",
+        "description": "Inspiring books, journals, and greeting cards celebrating life's moments.",
+        "image": "https://images.unsplash.com/photo-1516383274235-5f42d6c6426d?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1983"
+    },
+    {
+        "id": 8,
+        "name": "Design Design",
+        "category": "Gift",
+        "description": "Trend-forward paper goods, party supplies, and cheerful gifts.",
+        "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1987"
+    },
+    {
+        "id": 9,
+        "name": "Duke Cannon Supply Co.",
+        "category": "Bath & Body",
+        "description": "Premium grooming goods made in the USA for hard-working folks.",
+        "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2011"
+    },
+    {
+        "id": 10,
+        "name": "Face to Face Designs",
+        "category": "Home Decor",
+        "description": "Sentimental and rustic home accents and tabletop pieces.",
+        "image": "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1994"
+    },
+    {
+        "id": 11,
+        "name": "FinchBerry",
+        "category": "Bath & Body",
+        "description": "Artisan soaps and bath products that look as good as they smell.",
+        "image": "https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2010"
+    },
+    {
+        "id": 12,
+        "name": "Graphique de France",
+        "category": "Stationery",
+        "description": "Chic stationery, organizers, and luxury paper gifts.",
+        "image": "https://images.unsplash.com/photo-1503694978374-8a2fa686963a?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1979"
+    },
+    {
+        "id": 13,
+        "name": "Illume",
+        "category": "Candles",
+        "description": "Sophisticated home fragrances poured in beautifully designed vessels.",
+        "image": "https://images.unsplash.com/photo-1559141011-82e70e5b0213?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1994"
+    },
+    {
+        "id": 14,
+        "name": "Knock Knock",
+        "category": "Novelty",
+        "description": "Humorous notepads, journals, and witty gifts for everyday tasks.",
+        "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2002"
+    },
+    {
+        "id": 15,
+        "name": "Michel Design Works",
+        "category": "Bath & Body",
+        "description": "Luxurious bath, body, and home products featuring vibrant botanical art.",
+        "image": "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1987"
+    },
+    {
+        "id": 16,
+        "name": "Primitives by Kathy",
+        "category": "Home Decor",
+        "description": "Heartwarming, rustic, and humorous signs and home accessories.",
+        "image": "https://images.unsplash.com/photo-1584347895123-bc2ee6ccf971?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1997"
+    },
+    {
+        "id": 17,
+        "name": "Shiraleah",
+        "category": "Accessories",
+        "description": "Trend-driven lifestyle brand offering chic bags, apparel, and home decor.",
+        "image": "https://images.unsplash.com/photo-1591561954557-26941169b49e?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1998"
+    },
+    {
+        "id": 18,
+        "name": "Sock It To Me",
+        "category": "Apparel",
+        "description": "Fun, funky, and expressive socks and underwear for everyone.",
+        "image": "https://images.unsplash.com/photo-1582966772680-860e372bb558?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2004"
+    },
+    {
+        "id": 19,
+        "name": "Studio Oh!",
+        "category": "Stationery",
+        "description": "Artfully designed journals, planners, and lifestyle accessories.",
+        "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2011"
+    },
+    {
+        "id": 20,
+        "name": "Zootility",
+        "category": "Novelty",
+        "description": "Clever, functional pocket tools and gadgets proudly made in the USA.",
+        "image": "https://images.unsplash.com/photo-1505798577917-a65157d3320a?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2012"
+    },
+    {
+        "id": 21,
+        "name": "Brumate",
+        "category": "Kitchen",
+        "description": "Innovative, premium insulated drinkware and coolers for any adventure.",
+        "image": "https://images.unsplash.com/photo-1614271810777-a8da1b9cccdb?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2016"
+    },
+    {
+        "id": 22,
+        "name": "Capri Blue",
+        "category": "Candles",
+        "description": "Iconic Volcano fragrance and wildly colorful, striking candle vessels.",
+        "image": "https://images.unsplash.com/photo-1602874801007-bd458fc1d317?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1999"
+    },
+    {
+        "id": 23,
+        "name": "Caspari",
+        "category": "Stationery",
+        "description": "Elegant printed paper products replicating fine art and museum pieces.",
+        "image": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1954"
+    },
+    {
+        "id": 24,
+        "name": "The Cottage Greenhouse",
+        "category": "Bath & Body",
+        "description": "Fresh, botanical bath and body care celebrating the garden's bounty.",
+        "image": "https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2014"
+    },
+    {
+        "id": 25,
+        "name": "Creative Co-Op",
+        "category": "Home Decor",
+        "description": "Extensive collection of vintage-inspired home furnishings and accents.",
+        "image": "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2001"
+    },
+    {
+        "id": 26,
+        "name": "Faherty",
+        "category": "Apparel",
+        "description": "High-quality, sustainably minded clothing with a laid-back, surf-inspired vibe.",
+        "image": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2013"
+    },
+    {
+        "id": 27,
+        "name": "Jellycat",
+        "category": "Baby & Child",
+        "description": "Irresistibly soft, quirky, and luxurious soft toys from London.",
+        "image": "https://images.unsplash.com/photo-1558907328-912c98d6cbf7?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1999"
+    },
+    {
+        "id": 28,
+        "name": "Katie Loxton",
+        "category": "Accessories",
+        "description": "Beautiful sentiment-driven vegan leather bags, pouches, and accessories.",
+        "image": "https://images.unsplash.com/photo-1591561954557-26941169b49e?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2015"
+    },
+    {
+        "id": 29,
+        "name": "Lollia",
+        "category": "Bath & Body",
+        "description": "Luxurious, beautifully packaged fragrances, hand creams, and bubbling baths.",
+        "image": "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2003"
+    },
+    {
+        "id": 30,
+        "name": "Mud Pie",
+        "category": "Gift",
+        "description": "Lifestyle brand creating delightful kids, living, and fashion gifts.",
+        "image": "https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1988"
+    },
+    {
+        "id": 31,
+        "name": "Natural Life",
+        "category": "Apparel",
+        "description": "Free-spirited, colorful clothing and boho-chic home accessories.",
+        "image": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1996"
+    },
+    {
+        "id": 32,
+        "name": "Nora Fleming",
+        "category": "Kitchen",
+        "description": "One neutral platter, endless interchangeable 'minis' for every occasion.",
+        "image": "https://images.unsplash.com/photo-1574588725835-10eb0a68d0e5?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2004"
+    },
+    {
+        "id": 33,
+        "name": "Popsockets",
+        "category": "Tech / Office",
+        "description": "Empowering, expressive, and fun accessories for mobile devices.",
+        "image": "https://images.unsplash.com/photo-1585060544812-6b45742d762f?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2014"
+    },
+    {
+        "id": 34,
+        "name": "Rifle Paper Co.",
+        "category": "Stationery",
+        "description": "Vibrant, bold floral illustrations spanning stationery, home, and lifestyle.",
+        "image": "https://images.unsplash.com/photo-1503694978374-8a2fa686963a?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2009"
+    },
+    {
+        "id": 35,
+        "name": "Stasher",
+        "category": "Kitchen",
+        "description": "Radically functional, endlessly reusable platinum silicone storage bags.",
+        "image": "https://images.unsplash.com/photo-1614271810777-a8da1b9cccdb?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2016"
+    },
+    {
+        "id": 36,
+        "name": "Sugarfina",
+        "category": "Gourmet",
+        "description": "Luxury candy boutique for grown-ups featuring beautifully curated sweets.",
+        "image": "https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2012"
+    },
+    {
+        "id": 37,
+        "name": "Swig Life",
+        "category": "Kitchen",
+        "description": "Stylish, insulated drinkware and coolers featuring vibrant patterns.",
+        "image": "https://images.unsplash.com/photo-1574588725835-10eb0a68d0e5?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "2017"
+    },
+    {
+        "id": 38,
+        "name": "Thymes",
+        "category": "Bath & Body",
+        "description": "Artfully crafted fragrances connecting humans with botanical nature.",
+        "image": "https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1982"
+    },
+    {
+        "id": 39,
+        "name": "Voluspa",
+        "category": "Candles",
+        "description": "Hand-poured luxury candles with exotic, evocative fragrances.",
+        "image": "https://images.unsplash.com/photo-1602874801007-bd458fc1d317?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1999"
+    },
+    {
+        "id": 40,
+        "name": "Warmies",
+        "category": "Baby & Child",
+        "description": "Fully microwavable, French lavender scented plush toys and wellness items.",
+        "image": "https://images.unsplash.com/photo-1558907328-912c98d6cbf7?q=80&w=800&auto=format&fit=crop",
+        "featured": false,
+        "established": "1995"
+    }
+]

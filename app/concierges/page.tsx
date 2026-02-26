@@ -89,7 +89,7 @@ export default function ConciergesPage() {
                 </motion.div>
 
                 {/* Filters */}
-                <div className="flex flex-col md:flex-row gap-8 mb-16 items-center justify-between border-b border-[#e8e6e1] pb-12">
+                <div id="directory-grid" className="flex flex-col md:flex-row gap-8 mb-16 items-center justify-between border-b border-[#e8e6e1] pb-12 pt-8 scroll-mt-32">
                     <div className="relative w-full md:max-w-xl mx-auto group">
                         <Search className="absolute left-6 top-1/2 -translate-y-1/2 w-5 h-5 text-[#5c5c57]/50 group-focus-within:text-[#1c1c1a] transition-colors" />
                         <input

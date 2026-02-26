@@ -6,9 +6,9 @@ import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 
 export interface Brand {
-  id: string;
+  id: number;
   name: string;
-  category: string[];
+  category: string;
   image: string;
   description: string;
   isNew?: boolean;
@@ -62,11 +62,9 @@ export default function BrandCard({ brand, index }: BrandCardProps) {
                 {brand.description}
               </p>
               <div className="flex flex-wrap gap-2">
-                {brand.category.map((cat) => (
-                  <span key={cat} className="text-[10px] uppercase tracking-[0.2em] text-[#f5f5f0]/50 border border-[#f5f5f0]/20 px-3 py-1 rounded-sm">
-                    {cat}
-                  </span>
-                ))}
+                <span key={brand.category} className="text-[10px] uppercase tracking-[0.2em] text-[#f5f5f0]/50 border border-[#f5f5f0]/20 px-3 py-1 rounded-sm">
+                  {brand.category}
+                </span>
               </div>
             </div>
           </div>
