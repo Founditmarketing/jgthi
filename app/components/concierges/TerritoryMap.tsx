@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
+import { ArrowRight } from 'lucide-react';
 
 interface TerritoryMapProps {
     activeRegion: string;
@@ -8,72 +9,68 @@ interface TerritoryMapProps {
 }
 
 const regions = [
-    { id: 'West', label: 'West', coords: 'col-start-1 col-end-4 row-start-1 row-end-4', bg: 'bg-[#e8e6e1]', desc: 'CA, WA, OR, NV, AZ, NM, ID, UT, CO, WY, MT' },
-    { id: 'Midwest', label: 'Midwest / MINK', coords: 'col-start-4 col-end-8 row-start-1 row-end-3', bg: 'bg-[#d4d1c9]', desc: 'ND, SD, NE, KS, MN, IA, MO, WI, IL, MI, IN, OH' },
-    { id: 'Northeast', label: 'Northeast', coords: 'col-start-8 col-end-11 row-start-1 row-end-2', bg: 'bg-[#8a8a85]', desc: 'NY, PA, NJ, CT, RI, MA, VT, NH, ME' },
-    { id: 'Mid-Atlantic', label: 'Mid-Atlantic', coords: 'col-start-8 col-end-11 row-start-2 row-end-3', bg: 'bg-[#5c5c57] text-[#f5f5f0]', desc: 'MD, DE, DC, VA, WV' },
-    { id: 'Southeast', label: 'Southeast', coords: 'col-start-6 col-end-10 row-start-3 row-end-5', bg: 'bg-[#1c1c1a] text-[#f5f5f0]', desc: 'NC, SC, GA, FL, AL, MS, TN, KY' },
-    { id: 'International', label: 'International & Key Accounts', coords: 'col-start-1 col-end-11 row-start-5 row-end-6 mt-4', bg: 'bg-[#f5f5f0] border border-[#1c1c1a]/20', desc: 'Global Partners & National Accounts' }
+    { id: 'All', label: 'All Regions', desc: 'National Sales' },
+    { id: 'Southeast', label: 'Southeast', desc: 'NC, SC, GA, FL, AL, MS, TN, KY' },
+    { id: 'Mid-Atlantic', label: 'Mid-Atlantic', desc: 'MD, DE, DC, VA, WV, NY, PA, NJ' },
+    { id: 'Northeast', label: 'Northeast', desc: 'CT, RI, MA, VT, NH, ME' },
+    { id: 'Midwest', label: 'Midwest / MINK', desc: 'ND, SD, NE, KS, MN, IA, MO, WI, IL, MI, OH' },
+    { id: 'West', label: 'West', desc: 'CA, WA, OR, NV, AZ, NM, ID, UT, CO, WY, MT' },
+    { id: 'International', label: 'Key Accounts', desc: 'Global Partners' }
 ];
 
 export default function TerritoryMap({ activeRegion, onRegionSelect }: TerritoryMapProps) {
     return (
         <div className="w-full max-w-5xl mx-auto mb-24">
-            <div className="flex items-end justify-between mb-8">
-                <div>
-                    <h2 className="font-serif text-3xl md:text-5xl text-[#1c1c1a] mb-2">Select Territory</h2>
-                    <p className="text-[#5c5c57] font-light">Find your dedicated Brand Concierge by region</p>
-                </div>
-                <button
-                    onClick={() => onRegionSelect('All')}
-                    className={`text-xs uppercase tracking-widest font-medium transition-colors ${activeRegion === 'All' ? 'text-[#1c1c1a] border-b border-[#1c1c1a]' : 'text-[#8a8a85] hover:text-[#1c1c1a]'}`}
-                >
-                    View All Reps
-                </button>
+            <div className="flex flex-col mb-12 border-b border-[#1c1c1a]/10 pb-4">
+                <h2 className="font-serif text-3xl md:text-5xl text-[#1c1c1a] mb-2">Refine by Territory</h2>
+                <p className="text-[#5c5c57] font-light">Select a region to find your dedicated Brand Concierge</p>
             </div>
 
-            <div className="relative w-full aspect-[4/3] md:aspect-[21/9] bg-white border border-[#e8e6e1] p-4 md:p-8 rounded-sm">
-                <div className="w-full h-full grid grid-cols-10 grid-rows-5 gap-2 md:gap-4">
-                    {regions.map((region) => {
-                        const isActive = activeRegion === region.id;
-                        const isDimmed = activeRegion !== 'All' && !isActive;
+            <div className="w-full flex flex-col gap-2">
+                {regions.map((region) => {
+                    const isActive = activeRegion === region.id;
 
-                        return (
-                            <motion.button
-                                key={region.id}
-                                onClick={() => onRegionSelect(region.id)}
-                                whileHover={{ scale: 0.98 }}
-                                whileTap={{ scale: 0.95 }}
-                                className={`
-                  relative group overflow-hidden rounded-sm text-left p-4 md:p-6 transition-all duration-500
-                  ${region.coords}
-                  ${region.bg}
-                  ${isDimmed ? 'opacity-30 grayscale' : 'opacity-100'}
-                  ${isActive ? 'ring-2 ring-offset-2 ring-[#1c1c1a]' : ''}
-                `}
-                            >
-                                <div className="relative z-10 h-full flex flex-col justify-between">
-                                    <span className={`text-sm md:text-xl font-serif leading-tight ${region.bg.includes('text') ? 'text-[#f5f5f0]' : 'text-[#1c1c1a]'}`}>
-                                        {region.label}
-                                    </span>
+                    return (
+                        <motion.button
+                            key={region.id}
+                            onClick={() => onRegionSelect(region.id)}
+                            className="group relative w-full text-left flex items-center justify-between py-6 md:py-8 border-b border-[#e8e6e1] hover:border-[#1c1c1a] transition-colors overflow-hidden"
+                            whileHover="hover"
+                        >
+                            {/* Animated Background Slide on Hover (Left to right) */}
+                            <motion.div
+                                className="absolute inset-0 bg-[#1c1c1a] z-0"
+                                initial={{ x: '-100%' }}
+                                variants={{
+                                    hover: { x: 0, transition: { type: 'tween', ease: 'circOut', duration: 0.5 } }
+                                }}
+                            />
 
-                                    <motion.div
-                                        initial={{ opacity: 0, y: 10 }}
-                                        animate={{ opacity: isActive ? 1 : 0, y: isActive ? 0 : 10 }}
-                                        className="hidden md:block"
-                                    >
-                                        <p className={`text-[10px] md:text-xs tracking-widest uppercase mt-4 ${region.bg.includes('text') ? 'text-[#f5f5f0]/70' : 'text-[#5c5c57]'}`}>
-                                            {region.desc}
-                                        </p>
-                                    </motion.div>
-                                </div>
+                            {/* Content */}
+                            <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-2 md:gap-12 w-full transition-colors duration-500">
+                                <span className={`font-serif text-4xl md:text-6xl tracking-tight transition-colors duration-500 ${isActive ? 'text-[#1c1c1a] italic' : 'text-[#8a8a85] group-hover:text-[#f5f5f0]'}`}>
+                                    {region.label}
+                                </span>
 
-                                {/* Hover overlay */}
-                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                            </motion.button>
-                        );
-                    })}
-                </div>
+                                <span className={`text-xs md:text-sm uppercase tracking-widest transition-colors duration-500 max-w-sm ${isActive ? 'text-[#1c1c1a]' : 'text-[#8a8a85] group-hover:text-[#e8e6e1]'}`}>
+                                    {region.desc}
+                                </span>
+                            </div>
+
+                            {/* Arrow */}
+                            <div className="relative z-10 hidden md:flex items-center justify-center overflow-hidden">
+                                <motion.div
+                                    className="flex text-[#1c1c1a] group-hover:text-[#f5f5f0] transition-colors duration-500"
+                                    variants={{
+                                        hover: { x: [0, 10, 0], transition: { repeat: Infinity, duration: 1.5 } }
+                                    }}
+                                >
+                                    {isActive ? <div className="w-3 h-3 rounded-full bg-[#1c1c1a] mr-4 shadow-sm" /> : <ArrowRight className="w-8 h-8 opacity-0 group-hover:opacity-100 transition-opacity" />}
+                                </motion.div>
+                            </div>
+                        </motion.button>
+                    );
+                })}
             </div>
         </div>
     );
