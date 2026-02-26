@@ -41,10 +41,10 @@ export default function FounderSection() {
 
                         <div className="space-y-6 text-[#5c5c57] text-lg font-light leading-relaxed max-w-2xl">
                             <p>
-                                When our founder started Just Got 2 Have It! back in 2002, the vision was simple: to create a wholesale agency that felt like family but operated with world-class precision.
+                                Just Got 2 Have It! was originally founded back in 2002. Sixteen years ago, Michelle bought into the company with a distinct vision: to scale a wholesale agency that felt like family but operated with world-class precision.
                             </p>
                             <p>
-                                She saw a gap in the industry—a need for an agency that didn&apos;t just move boxes, but genuinely understood the art of retail and the passion behind the brands. Her dedication to finding the perfect products and her commitment to the success of every retailer she met laid the foundation for everything we do today.
+                                She saw a gap in the industry—a need for an agency that didn&apos;t just move boxes, but genuinely understood the art of retail and the passion behind the brands. Her dedication to finding the perfect products and her commitment to the success of every retailer she met laid the foundation for the powerhouse agency we are today.
                             </p>
                             <p className="font-medium text-[#1c1c1a]">
                                 &quot;We don&apos;t just sell products; we tell stories. And the most important story is the one our retailers create every day.&quot;
