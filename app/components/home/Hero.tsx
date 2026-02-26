@@ -7,11 +7,7 @@ import { useRef, useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const heroImages = [
-  '/jg2hi-hero1.jpg',
-  '/jg2hi-hero3.jpg',
-  '/jg2hi-hero4.jpg',
-  '/jg2hi-hero5.jpg',
-  '/jg2hi-hero6.jpg',
+  '/hero_showroom.jpg',
 ];
 
 export default function Hero() {
