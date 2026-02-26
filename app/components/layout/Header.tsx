@@ -110,6 +110,9 @@ export default function Header() {
               >
                 Home
               </Link>
+              <Link href="/contact/vendor-submissions" className="text-3xl font-serif text-[#1c1c1a] hover:text-[#5c5c57] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                Vendor Submissions
+              </Link>
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
