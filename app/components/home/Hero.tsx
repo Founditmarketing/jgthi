@@ -32,13 +32,6 @@ export default function Hero() {
     return () => clearInterval(timer);
   }, []);
 
-  // Safety reset if index somehow goes out of bounds
-  useEffect(() => {
-    if (activeIndex >= heroImages.length) {
-      setActiveIndex(0);
-    }
-  }, [activeIndex]);
-
   return (
     <section ref={containerRef} className="relative h-[95vh] min-h-[800px] w-full overflow-hidden bg-[#1c1c1a] text-[#f5f5f0]">
       {/* Background Carousel */}
