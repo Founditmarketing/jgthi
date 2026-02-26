@@ -70,7 +70,7 @@ export default function Header() {
             <button className={`p-2 transition-colors ${solidMode ? 'text-[#5c5c57] hover:text-[#1c1c1a]' : 'text-[#e8e6e1] hover:text-white'}`}>
               <Search className="w-5 h-5" />
             </button>
-            <Button variant="luxury" size="sm" className={`hidden lg:inline-flex ${solidMode ? '' : 'bg-[#f5f5f0] text-[#1c1c1a] border-[#f5f5f0] hover:bg-[#e8e6e1]'}`}>
+            <Button variant="luxury" size="sm" className={`hidden lg:inline-flex ${solidMode ? '' : 'bg-[#f5f5f0] text-[#1c1c1a] border-[#f5f5f0] hover:bg-[#e8e6e1]'}`} onClick={() => window.open('https://markettime.com/login', '_blank')}>
               MarketTime Login
             </Button>
           </div>
@@ -121,7 +121,7 @@ export default function Header() {
                 </Link>
               ))}
               <div className="h-px w-12 bg-[#e8e6e1] my-4" />
-              <Button variant="luxury" className="w-full max-w-xs bg-[#1c1c1a] text-[#f5f5f0]">
+              <Button variant="luxury" className="w-full max-w-xs bg-[#1c1c1a] text-[#f5f5f0]" onClick={() => window.open('https://markettime.com/login', '_blank')}>
                 MarketTime Login
               </Button>
             </nav>
